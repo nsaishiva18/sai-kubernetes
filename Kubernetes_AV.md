@@ -591,6 +591,11 @@ kubectl config use-context kind-multi
 - Kind is light weight.
 
 ```sh
+curl.exe -Lo kind-windows-amd64.exe https://kind.sigs.k8s.io/dl/v0.30.0/kind-windows-amd64
+Move-Item .\kind-windows-amd64.exe c:\some-dir-in-your-PATH\kind.exe
+```
+
+```sh
 kind version
 
 kind create cluster --name=single-node-cluster # will create single node cluster
